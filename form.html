@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+        }
+        form .dets{
+            display: flex;
+            column-gap: 20px;
+        }
+        textarea{
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="dets">
+        <div>
+        <label for="">Names:</label>
+        <input type="text" name="names">
+        </div>
+        
+        <div>
+        <label for="">Email:</label>
+        <input type="email" name="email">
+    </div>
+</div>
+    <div>
+        <label for="">Message:</label>
+        <textarea name="mssg" id="" cols="40" rows="5"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

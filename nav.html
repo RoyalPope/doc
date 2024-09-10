@@ -9,6 +9,10 @@
             padding: 0;
             margin: 0;
             font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .nav a{
+            text-decoration: none;
         }
         .nav{
             position: fixed;
@@ -34,17 +38,40 @@
             color: white;
             text-decoration: none;
         }
+        #burger{
+            color: white;
+            display: none;
+            font-size: 25px;
+            margin-right: 6%;
+            cursor: pointer;
+        }
+        @media (max-width: 800px){
+            #burger{
+                display: block;
+            }
+            .links{
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
 <div class="nav">
         <div>
-            <h1>HPOINT Appointments</h1>
+            <a href="home.php"><h1>Hpoint Appointments</h1></a>
         </div>
+        <span id="burger">&#9776;</span>
         <div class="links">
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
+            <a href="#help">Help</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="login.php">Log In</a>
         </div>
     </div>
+    <script>
+        var ham = document.getElementById("burger");
+        
+    </script>
 </body>
 </html>

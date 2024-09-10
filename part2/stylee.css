@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.nav{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(0, 158, 158);
+    padding: 20px;
+}
+.nav a{
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    display: block;    
+    padding: 20px;
+}
+.nav a:hover{
+    background-color: white;
+    width: 100%;
+    color: rgb(0, 158, 158);
+    border-radius: 5px;
+}
+.log a{
+    margin-top: 50%;
+    margin-left: 50%;
+}
+.log a:hover{
+    width: 45%;
+}

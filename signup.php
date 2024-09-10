@@ -11,6 +11,7 @@
     }
   
     form {
+    border: 5px inset rgb(0, 158, 158);
     max-width: 400px;
     margin: 0 auto;
     padding: 40px;
@@ -52,7 +53,7 @@
     }
   
     input[type="submit"] {
-    background-color: #C9C19F;
+    background-color: rgb(0, 158, 158);
     color: white;
     border: none;
     cursor: pointer;
@@ -60,13 +61,31 @@
     }
   
     input[type="submit"]:hover {
-    background-color: #7D7C7A;
+    background-color: white;
+    color:rgb(0, 158, 158);
+    border: 1px solid rgb(0, 158, 158);
     transform: scale(1.05);
+    }
+    a {
+    color: rgb(0, 158, 158);
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: #7D7C7A;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        font-family: 'Lucida Handwriting';
+        color: rgb(0,158,158);
+        font-weight: bold;
     }
     </style>
 </head>
 <body>
     <form action="create.php" method="post">
+        <span>HPOINT Appointments</span>
     <h1>Sign Up</h1>    
     Username: <input type="text" name="username">
         Password: <input type="password" name="pass">
@@ -74,8 +93,10 @@
             <option value="#"></option>
             <option value="Doc">Doc</option>
             <option value="Nurse">Nurse</option>
+            <option value="Admin">Admin</option>
         </select><br><br>
         <input type="submit" value="Submit">
+        Have account? <a href="index.php">LogIn</a>
     </form>
 </body>
 </html>
